@@ -1,8 +1,9 @@
 var db = require('monk')('localhost/shanePrototypeMongo');
+var helpers = require('../helpers');
 
 module.exports = {
 	retrieve: function (req, res) {
-		var samples = db.get('samples');
+		var samples = db.get('users');
 
 		samples.find({},{},function(err, samples){
 			if(err){
@@ -14,9 +15,10 @@ module.exports = {
  	},
 
  	create: function (req, res) {
-		var posts = db.get('samples');
+		var posts = db.get('users');
 
 		posts.insert({
+			"email": req.body.email,
 			"name": req.body.name,
 			"age": req.body.age,
 			"gender": req.body.gender
