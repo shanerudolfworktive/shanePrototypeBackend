@@ -1,3 +1,4 @@
 node_modules
 dump.rdb
 export.sh
+.DS_Store
