@@ -16,14 +16,20 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "mongodb":"*",
-    "monk": "^1.0.1",
+    "mongodb": "*",
     "monk": "https://github.com/vccabral/monk.git",
-    "connect-flash":"*",
-    "express-validator":"*",
-    "express-session":"*",
-    "express-messages":"*",
-    "multer":"*",
-    "moment":"*"
+    "connect-flash": "*",
+    "express-validator": "*",
+    "express-session": "*",
+    "express-messages": "*",
+    "multer": "*",
+    "moment": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "request": "^2.79.0",
+    "should": "^11.1.1",
+    "supertest": "^2.0.1"
   }
 }
