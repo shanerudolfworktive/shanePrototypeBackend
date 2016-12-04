@@ -11,4 +11,7 @@ router.route('/postgresSample/')
 	.get(controllers.postgresSampleController.retrieve)
     .post(controllers.postgresSampleController.create);
 
+router.route('/postgresSample/:todo_id')
+	.delete(controllers.postgresSampleController.delete);
+
 module.exports = router;
