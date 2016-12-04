@@ -7,6 +7,8 @@ router.route('/mongoSample/')
 	.get(controllers.mongoSampleController.retrieve)
     .post(controllers.mongoSampleController.create);
     
-
+router.route('/postgresSample/')
+	.get(controllers.postgresSampleController.retrieve)
+    .post(controllers.postgresSampleController.create);
 
 module.exports = router;
